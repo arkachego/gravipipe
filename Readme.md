@@ -1,6 +1,6 @@
-# GraviTODO: A simple To-Do list
+# GraviPIPE: A MongoDB Aggregation Pipeline
 
-This repository is the answer asked for in **Question #3** of the assignment for the role of **Lead MERN Developer** in **Gravity Engineering Services**. It was asked to write a MongoDB Aggregation Pipeline to obtain the desired data output.
+This repository is the answer asked for in **Question #3** of the assignment for the role of **Lead MERN Developer** in **Gravity Engineering Services**. It was asked to write a MongoDB Aggregation Pipeline to obtain the desired data output. The `src/pipeline.ts` file is the actual artifact which has been asked for.
 
 ### How to run it in your local system?
 

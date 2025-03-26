@@ -1,8 +1,6 @@
 // Libraries
 import mongoose, { Schema, Document } from 'mongoose';
 
-const MONGO_URI = 'mongodb://admin:password@localhost:27017/?authSource=admin';
-
 type ItemType = {
   name: string;
   quantity: number;
@@ -15,7 +13,6 @@ export interface IStore extends Document {
   items: ItemType[];
 }; 
 
-// Define the schema
 const StoreSchema: Schema = new Schema({
   store: { type: String, required: true },
   date: { type: Date, required: true },
@@ -28,5 +25,4 @@ const StoreSchema: Schema = new Schema({
   ],
 });
 
-// Create the Mongoose model
 export const Store = mongoose.model<IStore>('Store', StoreSchema);

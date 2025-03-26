@@ -8,10 +8,11 @@
     "mongo:start": "docker compose up -d",
     "mongo:stop": "docker compose down",
     "mongo:logs": "docker compose logs -f",
-    "mongo:insert": "npx tsc && node dist/insert.js",
-    "mongo:pipeline": "npx tsc && node dist/index.js"
+    "mongo:insert": "npx tsc && node -r dotenv/config dist/insert.js",
+    "mongo:pipeline": "npx tsc && node -r dotenv/config dist/index.js"
   },
   "dependencies": {
+    "dotenv": "^16.4.7",
     "mongoose": "^8.13.0"
   },
   "devDependencies": {
