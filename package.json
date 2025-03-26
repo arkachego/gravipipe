@@ -1,0 +1,22 @@
+{
+  "name": "gravipipe",
+  "version": "1.0.0",
+  "author": "Arka Halder",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "mongo:start": "docker compose up -d",
+    "mongo:stop": "docker compose down",
+    "mongo:logs": "docker compose logs -f",
+    "mongo:insert": "npx tsc && node dist/insert.js",
+    "mongo:pipeline": "npx tsc && node dist/index.js"
+  },
+  "dependencies": {
+    "mongoose": "^8.13.0"
+  },
+  "devDependencies": {
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^22.13.13",
+    "typescript": "^5.8.2"
+  }
+}
