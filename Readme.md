@@ -2,6 +2,10 @@
 
 This repository is the answer asked for in **Question #3** of the assignment for the role of **Lead MERN Developer** in **Gravity Engineering Services**. It was asked to write a MongoDB Aggregation Pipeline to obtain the desired data output. The `src/pipeline.ts` file is the actual artifact which has been asked for.
 
+The prettified output can be seen below.
+
+![Image](artifacts/demo.png)
+
 ### How to run it in your local system?
 
 1. Launch the Docker Daemon Service in your local system.
